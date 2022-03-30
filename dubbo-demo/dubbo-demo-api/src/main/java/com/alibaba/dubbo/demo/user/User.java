@@ -31,7 +31,7 @@ import java.io.Serializable;
  */
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-public class User implements Serializable {
+public class User  {
 
     @NotNull
     @Min(1L)

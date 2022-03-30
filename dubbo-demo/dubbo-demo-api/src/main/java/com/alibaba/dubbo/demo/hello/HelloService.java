@@ -15,9 +15,15 @@
  */
 package com.alibaba.dubbo.demo.hello;
 
+import com.alibaba.dubbo.demo.user.User;
+
 /**
  * @author lishen
  */
 public interface HelloService {
     String hello(String name);
+
+    User getUser();
+
+    User addUser(User user);
 }

@@ -15,6 +15,8 @@
  */
 package com.alibaba.dubbo.demo.hello;
 
+import com.alibaba.dubbo.demo.user.User;
+
 /**
  * @author lishen
  */
@@ -22,5 +24,15 @@ public class HelloServiceImpl implements HelloService {
 
     public String hello(String name) {
         return "hello " + name;
+    }
+
+    @Override
+    public User getUser() {
+        return new User(12345L,"张三是是是");
+    }
+
+    @Override
+    public User addUser(User user) {
+        return user;
     }
 }
